@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Macrow｜黒の本革バッグと革小物</title>
+<meta name="description" content="黒一色で仕立てる、本革バッグと革小物のオンラインストア。革小物5アイテムとバッグ5アイテム、すべてブラック。ミニマルで長く使える日常の道具をお届けします。">
+<style>
+  :root{
+    --ink:#111111;
+    --sub:#6e6e6e;
+    --line:#e5e5e5;
+    --bg:#ffffff;
+    --soft:#f5f5f5;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-padding-top:84px;}
+  :focus-visible{outline:2px solid var(--ink);outline-offset:3px;}
+  body{
+    font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic",YuGothic,"Noto Sans JP",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    color:var(--ink);
+    background:var(--bg);
+    line-height:1.8;
+    letter-spacing:.04em;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none;}
+  img{display:block;max-width:100%;}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 24px;}
+
+  /* Header */
+  header{
+    position:sticky;top:0;z-index:10;
+    background:rgba(255,255,255,.94);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .header-inner{display:flex;align-items:center;justify-content:space-between;height:64px;}
+  .logo{font-size:16px;font-weight:600;letter-spacing:.26em;}
+  nav{display:flex;gap:28px;font-size:12.5px;letter-spacing:.1em;color:var(--sub);}
+  nav a:hover{color:var(--ink);}
+  @media(max-width:680px){
+    html{scroll-padding-top:118px;}
+    .header-inner{height:auto;min-height:64px;flex-wrap:wrap;padding-top:10px;padding-bottom:10px;row-gap:8px;}
+    .logo{font-size:14px;}
+    nav{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:11.5px;width:100%;}
+  }
+
+  /* Hero */
+  .hero{padding:64px 0 16px;}
+  .hero-img{overflow:hidden;background:var(--soft);}
+  .hero-img img{width:100%;height:auto;}
+  .hero-text{text-align:center;padding:64px 16px 8px;}
+  .hero-text .eyebrow{font-size:11px;letter-spacing:.4em;color:var(--sub);margin-bottom:20px;}
+  .hero-text h1{font-size:clamp(28px,4.6vw,44px);font-weight:500;line-height:1.5;letter-spacing:.14em;}
+  .hero-text p{margin-top:22px;color:var(--sub);font-size:14.5px;max-width:620px;margin-left:auto;margin-right:auto;}
+
+  /* Sections */
+  section{padding:80px 0;}
+  .section-head{text-align:center;margin-bottom:48px;}
+  .section-head .eyebrow{font-size:11px;letter-spacing:.4em;color:var(--sub);margin-bottom:12px;}
+  .section-head h2{font-size:clamp(21px,3vw,28px);font-weight:500;letter-spacing:.14em;}
+  .section-head p{color:var(--sub);font-size:14px;margin-top:10px;}
+
+  /* About */
+  .about{background:var(--soft);}
+  .about-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:36px;max-width:1000px;margin:0 auto;}
+  .about-item{text-align:center;padding:0 8px;}
+  .about-item h3{font-size:15px;font-weight:600;letter-spacing:.12em;margin-bottom:10px;}
+  .about-item p{font-size:13.5px;color:var(--sub);text-align:left;}
+  @media(max-width:760px){ .about-grid{grid-template-columns:1fr;gap:28px;} }
+
+  /* Products */
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:48px 28px;}
+  @media(max-width:900px){ .grid{grid-template-columns:repeat(2,1fr);} }
+  @media(max-width:540px){ .grid{grid-template-columns:1fr;} }
+  .card{display:flex;flex-direction:column;}
+  .card .thumb{background:var(--soft);overflow:hidden;aspect-ratio:1/1;}
+  .card .thumb img{width:100%;height:100%;object-fit:contain;transition:transform .5s ease;}
+  .card:hover .thumb img{transform:scale(1.03);}
+  .card .cat{font-size:10.5px;letter-spacing:.28em;color:var(--sub);margin-top:18px;}
+  .card h3{font-size:15.5px;font-weight:600;letter-spacing:.06em;margin-top:4px;overflow-wrap:anywhere;}
+  .card .desc{font-size:13px;color:var(--sub);margin-top:6px;flex:1;}
+  .card .price{font-size:15px;margin-top:12px;letter-spacing:.06em;}
+  .card .price small{font-size:11px;color:var(--sub);}
+  .btn{
+    display:block;text-align:center;margin-top:14px;
+    padding:12px 0;border:1px solid var(--ink);
+    font-size:12.5px;letter-spacing:.22em;transition:background .25s,color .25s;
+  }
+  .btn:hover{background:var(--ink);color:#fff;}
+
+  /* Gift */
+  .gift{background:var(--ink);color:#fff;text-align:center;}
+  .gift .section-head .eyebrow{color:#a3a3a3;}
+  .gift p.lead{color:#d4d4d4;font-size:14.5px;max-width:620px;margin:0 auto;}
+  .gift-points{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;margin-top:32px;}
+  .gift-points span{
+    border:1px solid #404040;border-radius:999px;
+    padding:8px 20px;font-size:13px;letter-spacing:.08em;
+  }
+
+  /* Footer */
+  footer{border-top:1px solid var(--line);padding:48px 0 40px;}
+  .footer-inner{display:flex;justify-content:space-between;align-items:flex-start;gap:24px;flex-wrap:wrap;}
+  .footer-logo{font-size:14px;font-weight:600;letter-spacing:.26em;}
+  .footer-links{display:flex;gap:24px;font-size:12.5px;color:var(--sub);flex-wrap:wrap;}
+  .footer-links a:hover{color:var(--ink);}
+  .copy{margin-top:28px;font-size:11.5px;color:var(--sub);letter-spacing:.08em;}
+  .card a.thumb{display:block;}
+  .card h3 a:hover{text-decoration:underline;text-underline-offset:4px;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap header-inner">
+    <a class="logo" href="#">Macrow</a>
+    <nav>
+      <a href="#about">ブランドについて</a>
+      <a href="#goods">革小物</a>
+      <a href="#bags">バッグ</a>
+      <a href="#gift">ギフト</a>
+      <a href="law.html">特定商取引法に基づく表記</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- Hero -->
+  <div class="wrap hero">
+    <div class="hero-img">
+      <img src="images/hero.webp" alt="黒の本革バッグと革小物のコレクション" fetchpriority="high" decoding="async">
+    </div>
+    <div class="hero-text">
+      <p class="eyebrow">ALL IN BLACK — LEATHER COLLECTION</p>
+      <h1>色は、黒だけ。<br>それで十分に、美しい。</h1>
+      <p>Macrow のコレクションは、すべてブラックの本革で統一しています。革小物5アイテムと、バッグ5アイテム。色で迷わない潔さが、毎日の装いに静かな品格をもたらします。</p>
+    </div>
+  </div>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">ABOUT</p>
+        <h2>ブランドについて</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-item">
+          <h3>黒に宿る、革の表情</h3>
+          <p>同じ黒でも、革の個体ごとに艶やシボの出方は異なります。染色の色数に頼らず、素材そのものの質感で勝負する。それが私たちの考えるラグジュアリーです。</p>
+        </div>
+        <div class="about-item">
+          <h3>引き算のデザイン</h3>
+          <p>ロゴも装飾も最小限に。残したのは、使いやすさという機能そのもののかたちです。流行に左右されず、年齢もスタイルも問わず長くお使いいただけます。</p>
+        </div>
+        <div class="about-item">
+          <h3>国内の工房から</h3>
+          <p>裁断から縫製、仕上げまで、国内の工房で一点ずつ丁寧に仕立てています。使う人の手に渡るまでの工程を自分たちの目で確かめられるものづくりを大切にしています。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leather Goods -->
+  <section id="goods">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">LEATHER GOODS</p>
+        <h2>革小物</h2>
+        <p>全5アイテム／価格はすべて税込です。</p>
+      </div>
+      <div class="grid">
+
+        <article class="card">
+          <a class="thumb" href="products/product-23.html"><img src="images/cards/zip-key-wallet-card.webp" loading="lazy" decoding="async" alt="ジップキーウォレット"></a>
+          <p class="cat">KEY WALLET</p>
+          <h3><a href="products/product-23.html">ジップキーウォレット</a></h3>
+          <p class="desc">鍵2本・硬貨・カード・紙幣をひとつに収めるファスナー式ウォレット。これだけで出かけられる最小構成です。</p>
+          <p class="price">¥12,430 <small>（税込）</small></p>
+          <!-- Square決済リンクをここに設定 -->
+          <a class="btn" href="#">購入する</a>
+        </article>
+
+        <article class="card">
+          <a class="thumb" href="products/product-26.html"><img src="images/cards/tether-pouch-wallet-card.webp" loading="lazy" decoding="async" alt="テザーポーチウォレット"></a>
+          <p class="cat">POUCH WALLET</p>
+          <h3><a href="products/product-26.html">テザーポーチウォレット</a></h3>
+          <p class="desc">コードテザー付きのポーチ型ウォレットを黒革で。ファスナー式メイン収納と背面ポケット付き。</p>
+          <p class="price">¥12,100 <small>（税込）</small></p>
+          <!-- Square決済リンクをここに設定 -->
+          <a class="btn" href="#">購入する</a>
+        </article>
+
+        <article class="card">
+          <a class="thumb" href="products/product-24.html"><img src="images/cards/twin-pocket-card-case-card.webp" loading="lazy" decoding="async" alt="ツインポケット名刺入れ"></a>
+          <p class="cat">CARD CASE</p>
+          <h3><a href="products/product-24.html">ツインポケット名刺入れ</a></h3>
+          <p class="desc">2つの収納部に各15枚、計30枚収まる薄型名刺入れ。自分の名刺と頂いた名刺を分けて収められます。</p>
+          <p class="price">¥7,040 <small>（税込）</small></p>
+          <!-- Square決済リンクをここに設定 -->
+          <a class="btn" href="#">購入する</a>
+        </article>
+
+        <article class="card">
+          <a class="thumb" href="products/product-25.html"><img src="images/cards/one-piece-card-case-card.webp" loading="lazy" decoding="async" alt="ワンピース薄型名刺入れ"></a>
+          <p class="cat">CARD CASE</p>
+          <h3><a href="products/product-25.html">ワンピース薄型名刺入れ</a></h3>
+          <p class="desc">一枚の革で構成した薄型名刺入れ。30枚収納で厚さ約15mm、マットな質感の黒革です。</p>
+          <p class="price">¥5,500 <small>（税込）</small></p>
+          <!-- Square決済リンクをここに設定 -->
+          <a class="btn" href="#">購入する</a>
+        </article>
+
+        <article class="card">
+          <a class="thumb" href="products/product-10.html"><img src="images/cards/mini-pouch-card.webp" loading="lazy" decoding="async" alt="レザーミニポーチ"></a>
+          <p class="cat">MINI POUCH</p>
+          <h3><a href="products/product-10.html">レザーミニポーチ</a></h3>
+          <p class="desc">大切な小物を包む、手のひらサイズの革ポーチ。お守りやアクセサリーの持ち歩きに。本革の贈り物の入門としても人気です。</p>
+          <p class="price">¥2,750 <small>（税込）</small></p>
+          <!-- Square決済リンクをここに設定 -->
+          <a class="btn" href="#">購入する</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Bags -->
+  <section id="bags" style="padding-top:0;">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">BAGS</p>
+        <h2>バッグ</h2>
+        <p>全5アイテム／価格はすべて税込です。</p>
+      </div>
+      <div class="grid">
+
+        
+
+        <article class="card">
+          <a class="thumb" href="products/product-16.html"><img src="images/cards/bucket-bag-card.webp" loading="lazy" decoding="async" alt="バケットバッグ S"></a>
+          <p class="cat">BUCKET BAG</p>
+          <h3><a href="products/product-16.html">バケットバッグ S</a></h3>
+          <p class="desc">巾着フォルムが愛らしい小型のバケットバッグ。必要最小限の荷物で出かけたい日に、装いのアクセントとして。</p>
+          <p class="price">¥38,500 <small>（税込）</small></p>
+          <!-- Square決済リンクをここに設定 -->
+          <a class="btn" href="#">購入する</a>
+        </article>
+
+        <article class="card">
+          <a class="thumb" href="products/product-21.html"><img src="images/cards/zip-minimal-tote-card.webp" loading="lazy" decoding="async" alt="ジップミニマルトート"></a>
+          <p class="cat">MINI TOTE</p>
+          <h3><a href="products/product-21.html">ジップミニマルトート</a></h3>
+          <p class="desc">幅21cmのミニマルなジップトート。長財布や500mlペットボトルが入り、重さは約290g。ノブレッサカーフの黒です。</p>
+          <p class="price">¥35,200 <small>（税込）</small></p>
+          <!-- Square決済リンクをここに設定 -->
+          <a class="btn" href="#">購入する</a>
+        </article>
+
+                <article class="card">
+          <a class="thumb" href="products/product-27.html"><img src="images/cards/soft-3way-bag-card.webp" loading="lazy" decoding="async" alt="3WAYソフトハンドバッグ"></a>
+          <p class="cat">3WAY BAG</p>
+          <h3><a href="products/product-27.html">3WAYソフトハンドバッグ</a></h3>
+          <p class="desc">約300gの軽いソフトレザーバッグ。手持ち・肩掛け・ショルダーの3WAYで、B5タブレットにも対応します。</p>
+          <p class="price">¥29,700 <small>（税込）</small></p>
+          <!-- Square決済リンクをここに設定 -->
+          <a class="btn" href="#">購入する</a>
+        </article>
+
+        <article class="card">
+          <a class="thumb" href="products/product-18.html"><img src="images/cards/sacoche-card.webp" loading="lazy" decoding="async" alt="レザーサコッシュ"></a>
+          <p class="cat">SACOCHE</p>
+          <h3><a href="products/product-18.html">レザーサコッシュ</a></h3>
+          <p class="desc">驚くほど薄く、体に沿うサコッシュ。スマホと財布だけで出かける日々に、革の質感という贅沢を添えます。</p>
+          <p class="price">¥27,500 <small>（税込）</small></p>
+          <!-- Square決済リンクをここに設定 -->
+          <a class="btn" href="#">購入する</a>
+        </article>
+
+        <article class="card">
+          <a class="thumb" href="products/product-20.html"><img src="images/cards/travel-pouch-card.webp" loading="lazy" decoding="async" alt="トラベルハンディポーチ"></a>
+          <p class="cat">POUCH BAG</p>
+          <h3><a href="products/product-20.html">トラベルハンディポーチ</a></h3>
+          <p class="desc">ストラップを付ければミニバッグ、外せばポーチに。コスメやガジェットの整理にも、出張や旅行のサブバッグにも活躍します。</p>
+          <p class="price">¥18,700 <small>（税込）</small></p>
+          <!-- Square決済リンクをここに設定 -->
+          <a class="btn" href="#">購入する</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Gift -->
+  <section class="gift" id="gift">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">GIFT</p>
+        <h2>贈り物にも</h2>
+      </div>
+      <p class="lead">色で迷わない黒の本革は、就職や昇進、記念日の贈り物に選ばれています。ギフトラッピングとメッセージカードをご用意していますので、ご注文時にお気軽にお申し付けください。</p>
+      <div class="gift-points">
+        <span>ギフトラッピング対応</span>
+        <span>メッセージカード無料</span>
+        <span>レザーケア用品もご用意</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-inner">
+      <p class="footer-logo">Macrow</p>
+      <div class="footer-links">
+        <a href="#about">ブランドについて</a>
+        <a href="#goods">革小物</a>
+        <a href="#bags">バッグ</a>
+        <a href="#gift">ギフト</a>
+        <a href="law.html">特定商取引法に基づく表記</a>
+      </div>
+    </div>
+    <p class="copy">&copy; 2026 Macrow. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
