@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ブログ｜Macrow</title>
+<meta name="description" content="Macrow のブログ。黒い本革製品の手入れの基本、名刺入れの選び方、革小物の贈り方など、長く使うための読み物をお届けします。">
+<style>
+  :root{
+    --ink:#111111;
+    --sub:#6e6e6e;
+    --line:#e5e5e5;
+    --bg:#ffffff;
+    --soft:#f5f5f5;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-padding-top:84px;}
+  :focus-visible{outline:2px solid var(--ink);outline-offset:3px;}
+  body{
+    font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic",YuGothic,"Noto Sans JP",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    color:var(--ink);
+    background:var(--bg);
+    line-height:1.8;
+    letter-spacing:.04em;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none;}
+  img{display:block;max-width:100%;}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 24px;}
+
+  /* Header */
+  header{
+    position:sticky;top:0;z-index:10;
+    background:rgba(255,255,255,.94);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .header-inner{display:flex;align-items:center;justify-content:space-between;height:64px;}
+  .logo{font-size:16px;font-weight:600;letter-spacing:.26em;}
+  nav{display:flex;gap:28px;font-size:12.5px;letter-spacing:.1em;color:var(--sub);}
+  nav a:hover{color:var(--ink);}
+  @media(max-width:680px){
+    html{scroll-padding-top:118px;}
+    .header-inner{height:auto;min-height:64px;flex-wrap:wrap;padding-top:10px;padding-bottom:10px;row-gap:8px;}
+    .logo{font-size:14px;}
+    nav{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:11.5px;width:100%;}
+  }
+
+  /* Page head */
+  .page-head{text-align:center;padding:72px 16px 8px;}
+  .page-head .eyebrow{font-size:11px;letter-spacing:.4em;color:var(--sub);margin-bottom:12px;}
+  .page-head h1{font-size:clamp(24px,3.4vw,34px);font-weight:500;letter-spacing:.14em;}
+  .page-head p{color:var(--sub);font-size:14px;margin-top:14px;max-width:620px;margin-left:auto;margin-right:auto;}
+
+  /* Article cards */
+  section{padding:64px 0 88px;}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:48px 28px;}
+  @media(max-width:900px){ .grid{grid-template-columns:repeat(2,1fr);} }
+  @media(max-width:540px){ .grid{grid-template-columns:1fr;} }
+  .card{display:flex;flex-direction:column;}
+  .card .thumb{background:var(--soft);overflow:hidden;aspect-ratio:1/1;}
+  .card .thumb img{width:100%;height:100%;object-fit:contain;transition:transform .5s ease;}
+  .card:hover .thumb img{transform:scale(1.03);}
+  .card .cat{font-size:10.5px;letter-spacing:.28em;color:var(--sub);margin-top:18px;}
+  .card h2{font-size:15.5px;font-weight:600;letter-spacing:.06em;margin-top:4px;overflow-wrap:anywhere;line-height:1.7;}
+  .card .desc{font-size:13px;color:var(--sub);margin-top:6px;flex:1;}
+  .card .more{font-size:12.5px;letter-spacing:.18em;margin-top:14px;}
+  .card a.thumb{display:block;}
+  .card h2 a:hover{text-decoration:underline;text-underline-offset:4px;}
+
+  /* Footer */
+  footer{border-top:1px solid var(--line);padding:48px 0 40px;}
+  .footer-inner{display:flex;justify-content:space-between;align-items:flex-start;gap:24px;flex-wrap:wrap;}
+  .footer-logo{font-size:14px;font-weight:600;letter-spacing:.26em;}
+  .footer-links{display:flex;gap:24px;font-size:12.5px;color:var(--sub);flex-wrap:wrap;}
+  .footer-links a:hover{color:var(--ink);}
+  .copy{margin-top:28px;font-size:11.5px;color:var(--sub);letter-spacing:.08em;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap header-inner">
+    <a class="logo" href="../index.html">Macrow</a>
+    <nav>
+      <a href="../index.html#about">ブランドについて</a>
+      <a href="../index.html#goods">革小物</a>
+      <a href="../index.html#bags">バッグ</a>
+      <a href="../index.html#gift">ギフト</a>
+      <a href="index.html">ブログ</a>
+      <a href="../law.html">特定商取引法に基づく表記</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <div class="page-head">
+      <p class="eyebrow">JOURNAL</p>
+      <h1>ブログ</h1>
+      <p>黒い本革と長く付き合うための読み物です。手入れの基本、道具の選び方、贈り方のヒントをお届けします。</p>
+    </div>
+
+    <section>
+      <div class="grid">
+
+        <article class="card">
+          <a class="thumb" href="leather-care-basics.html"><img src="../images/cards/bucket-bag-card.webp" loading="lazy" decoding="async" alt="バケットバッグ S"></a>
+          <p class="cat">LEATHER CARE</p>
+          <h2><a href="leather-care-basics.html">黒い革製品の手入れ入門 ― 乾拭き・雨の日・保管の基本</a></h2>
+          <p class="desc">本革は「何もしない」のが一番ではなく、「やりすぎない」が正解です。日常の乾拭きから、濡れたときの対処、クリームを使う間隔、保管のしかたまで、基本だけを整理しました。</p>
+          <p class="more"><a href="leather-care-basics.html">記事を読む →</a></p>
+        </article>
+
+        <article class="card">
+          <a class="thumb" href="how-to-choose-card-case.html"><img src="../images/cards/twin-pocket-card-case-card.webp" loading="lazy" decoding="async" alt="ツインポケット名刺入れ"></a>
+          <p class="cat">HOW TO CHOOSE</p>
+          <h2><a href="how-to-choose-card-case.html">名刺入れの選び方 ― 容量・仕切り・薄さで考える</a></h2>
+          <p class="desc">名刺入れは「何枚入るか」だけでは選べません。交換の頻度、頂いた名刺の扱い、ポケットやバッグのどこに入れるか。3つの観点で、自分に合う一つの見つけ方を解説します。</p>
+          <p class="more"><a href="how-to-choose-card-case.html">記事を読む →</a></p>
+        </article>
+
+        <article class="card">
+          <a class="thumb" href="black-leather-gift-guide.html"><img src="../images/cards/mini-pouch-card.webp" loading="lazy" decoding="async" alt="レザーミニポーチ"></a>
+          <p class="cat">GIFT GUIDE</p>
+          <h2><a href="black-leather-gift-guide.html">黒い革小物を贈る ― 相手と場面で選ぶ、失敗しない贈り方</a></h2>
+          <p class="desc">色で迷わない黒の本革は、贈り物に向いています。就職・昇進・記念日など場面別に、相手の持ち物と重ならない選び方と、価格帯ごとの候補をまとめました。</p>
+          <p class="more"><a href="black-leather-gift-guide.html">記事を読む →</a></p>
+        </article>
+
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-inner">
+      <p class="footer-logo">Macrow</p>
+      <div class="footer-links">
+        <a href="../index.html#about">ブランドについて</a>
+        <a href="../index.html#goods">革小物</a>
+        <a href="../index.html#bags">バッグ</a>
+        <a href="../index.html#gift">ギフト</a>
+        <a href="index.html">ブログ</a>
+        <a href="../law.html">特定商取引法に基づく表記</a>
+      </div>
+    </div>
+    <p class="copy">&copy; 2026 Macrow. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

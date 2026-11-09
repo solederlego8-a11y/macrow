@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>名刺入れの選び方 ― 容量・仕切り・薄さで考える｜Macrow ブログ</title>
+<meta name="description" content="名刺入れの選び方を、容量（収納枚数）・仕切りの数・薄さと携帯場所の3つの観点で解説。自分の名刺と頂いた名刺を分ける意味や、素材の違いによる使い勝手の差も整理しました。">
+<style>
+  :root{
+    --ink:#111111;
+    --sub:#6e6e6e;
+    --line:#e5e5e5;
+    --bg:#ffffff;
+    --soft:#f5f5f5;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-padding-top:84px;}
+  :focus-visible{outline:2px solid var(--ink);outline-offset:3px;}
+  body{
+    font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic",YuGothic,"Noto Sans JP",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    color:var(--ink);
+    background:var(--bg);
+    line-height:1.8;
+    letter-spacing:.04em;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none;}
+  img{display:block;max-width:100%;}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 24px;}
+
+  /* Header */
+  header{
+    position:sticky;top:0;z-index:10;
+    background:rgba(255,255,255,.94);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .header-inner{display:flex;align-items:center;justify-content:space-between;height:64px;}
+  .logo{font-size:16px;font-weight:600;letter-spacing:.26em;}
+  nav{display:flex;gap:28px;font-size:12.5px;letter-spacing:.1em;color:var(--sub);}
+  nav a:hover{color:var(--ink);}
+  @media(max-width:680px){
+    html{scroll-padding-top:118px;}
+    .header-inner{height:auto;min-height:64px;flex-wrap:wrap;padding-top:10px;padding-bottom:10px;row-gap:8px;}
+    .logo{font-size:14px;}
+    nav{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:11.5px;width:100%;}
+  }
+
+  /* Breadcrumb */
+  .crumb{padding:28px 0 0;font-size:12px;color:var(--sub);letter-spacing:.08em;}
+  .crumb a:hover{color:var(--ink);}
+  .crumb span{margin:0 8px;color:var(--line);}
+
+  /* Article */
+  .article{max-width:760px;margin:0 auto;padding:36px 0 88px;}
+  .article .cat{font-size:11px;letter-spacing:.34em;color:var(--sub);}
+  .article h1{font-size:clamp(23px,3.2vw,32px);font-weight:600;letter-spacing:.06em;line-height:1.6;margin-top:12px;overflow-wrap:anywhere;}
+  .article .lead{font-size:15px;margin-top:24px;}
+  .article h2{font-size:19px;font-weight:600;letter-spacing:.08em;margin-top:48px;padding-bottom:10px;border-bottom:1px solid var(--line);}
+  .article h3{font-size:15.5px;font-weight:600;letter-spacing:.08em;margin-top:32px;}
+  .article p{font-size:14.5px;margin-top:16px;}
+  .article ul,.article ol{font-size:14.5px;margin-top:14px;padding-left:1.4em;}
+  .article li{margin-top:6px;}
+  .article a.inline{color:var(--ink);text-decoration:underline;text-underline-offset:3px;}
+  .article table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:18px;}
+  .article th,.article td{border-bottom:1px solid var(--line);padding:12px 8px;text-align:left;vertical-align:top;}
+  .article th{width:30%;font-weight:600;letter-spacing:.06em;}
+  .article td{color:#333;}
+  .note-box{background:var(--soft);padding:20px 22px;margin-top:24px;font-size:13.5px;}
+  .note-box p{font-size:13.5px;margin-top:8px;}
+  .note-box p:first-child{margin-top:0;}
+  .back-link{display:inline-block;margin-top:48px;font-size:13px;color:var(--sub);letter-spacing:.08em;}
+  .back-link:hover{color:var(--ink);}
+
+  /* Related products */
+  .related{border-top:1px solid var(--line);padding:64px 0 88px;}
+  .related-head{text-align:center;margin-bottom:40px;}
+  .related-head .eyebrow{font-size:11px;letter-spacing:.4em;color:var(--sub);margin-bottom:12px;}
+  .related-head h2{font-size:clamp(20px,2.8vw,26px);font-weight:500;letter-spacing:.14em;}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:48px 28px;}
+  @media(max-width:900px){ .grid{grid-template-columns:repeat(2,1fr);} }
+  @media(max-width:540px){ .grid{grid-template-columns:1fr;} }
+  .card{display:flex;flex-direction:column;}
+  .card .thumb{background:var(--soft);overflow:hidden;aspect-ratio:1/1;}
+  .card .thumb img{width:100%;height:100%;object-fit:contain;transition:transform .5s ease;}
+  .card:hover .thumb img{transform:scale(1.03);}
+  .card .cat{font-size:10.5px;letter-spacing:.28em;color:var(--sub);margin-top:18px;}
+  .card h3{font-size:15.5px;font-weight:600;letter-spacing:.06em;margin-top:4px;overflow-wrap:anywhere;}
+  .card .desc{font-size:13px;color:var(--sub);margin-top:6px;flex:1;}
+  .card .price{font-size:15px;margin-top:12px;letter-spacing:.06em;}
+  .card .price small{font-size:11px;color:var(--sub);}
+  .btn{
+    display:block;text-align:center;margin-top:14px;
+    padding:12px 0;border:1px solid var(--ink);
+    font-size:12.5px;letter-spacing:.22em;transition:background .25s,color .25s;
+  }
+  .btn:hover{background:var(--ink);color:#fff;}
+  .card a.thumb{display:block;}
+  .card h3 a:hover{text-decoration:underline;text-underline-offset:4px;}
+
+  /* Footer */
+  footer{border-top:1px solid var(--line);padding:48px 0 40px;}
+  .footer-inner{display:flex;justify-content:space-between;align-items:flex-start;gap:24px;flex-wrap:wrap;}
+  .footer-logo{font-size:14px;font-weight:600;letter-spacing:.26em;}
+  .footer-links{display:flex;gap:24px;font-size:12.5px;color:var(--sub);flex-wrap:wrap;}
+  .footer-links a:hover{color:var(--ink);}
+  .copy{margin-top:28px;font-size:11.5px;color:var(--sub);letter-spacing:.08em;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap header-inner">
+    <a class="logo" href="../index.html">Macrow</a>
+    <nav>
+      <a href="../index.html#about">ブランドについて</a>
+      <a href="../index.html#goods">革小物</a>
+      <a href="../index.html#bags">バッグ</a>
+      <a href="../index.html#gift">ギフト</a>
+      <a href="index.html">ブログ</a>
+      <a href="../law.html">特定商取引法に基づく表記</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <p class="crumb"><a href="../index.html">トップ</a><span>/</span><a href="index.html">ブログ</a><span>/</span>名刺入れの選び方</p>
+
+    <article class="article">
+      <p class="cat">HOW TO CHOOSE</p>
+      <h1>名刺入れの選び方 ― 容量・仕切り・薄さで考える</h1>
+      <p class="lead">名刺入れは小さな道具ですが、選び方には理由があります。「何枚入るか」というカタログの数字だけでなく、1日に何回交換するか、頂いた名刺をどう扱うか、どこに入れて持ち歩くか。この3つの観点で整理すると、自分に合う一つの条件が見えてきます。</p>
+
+      <h2>観点1：容量 ― 「1日の最大枚数」で決める</h2>
+      <p>容量の目安は、平均ではなく「いちばん多く配る日」に合わせるのが実用的です。通常の名刺は、一般的な厚さの紙で1枚あたり約0.3〜0.4mm程度。30枚なら約10mm前後の束になります。展示会や異動の挨拶回りなど、1日に20枚以上配る日があるなら30枚クラス、日常の商談中心なら15〜20枚クラスでも足ります。ただし、容量いっぱいに詰めると名刺の角が折れたり、革が型崩れしたりするため、公称容量の8割程度で使うのがきれいに保つコツです。</p>
+
+      <h2>観点2：仕切り ― 自分の名刺と、頂いた名刺を分けるか</h2>
+      <p>名刺交換の作法として広く知られているのが、頂いた名刺をその場で雑に扱わないことと、自分の名刺と混ぜないことです。仕切りが2つある名刺入れなら、片方に自分の名刺、もう片方に頂いた名刺を入れる運用が自然にできます。Macrow の<a class="inline" href="../products/product-24.html">ツインポケット名刺入れ</a>は、2つの収納部に各15枚・計30枚を分けて収める設計です。一方、仕切りが少ないシンプルな構造は、取り出しの速さと薄さで勝ります。交換の頻度が高い日は仕切り型、身軽に動く日は薄型、と使い分ける方もいます。</p>
+
+      <h2>観点3：薄さと携帯場所 ― ポケットか、バッグか</h2>
+      <p>名刺入れをどこに入れるかで、向く厚さは変わります。ジャケットの内ポケットやシャツの胸ポケットに入れるなら、厚さ15mm前後の薄型が収まりよく、ふくらみも目立ちません。バッグの内ポケットに入れるなら、薄さよりも容量と仕切りを優先できます。<a class="inline" href="../products/product-25.html">ワンピース薄型名刺入れ</a>は、一枚の革で構成し、30枚収納で厚さ約15mmに収めた設計です。素材はマットな質感のラバータッチレザー（牛革）で、光沢を抑えた見た目を好む方に向いています。</p>
+
+      <table>
+        <tr><th>ツインポケット名刺入れ</th><td>2収納部×各15枚（計30枚）。自分の名刺と頂いた名刺を分けたい方に。¥7,040（税込）</td></tr>
+        <tr><th>ワンピース薄型名刺入れ</th><td>30枚収納・厚さ約15mm。ポケット携帯と薄さを優先する方に。¥5,500（税込）</td></tr>
+      </table>
+
+      <h2>素材で選ぶ ― 本革ならではの変化</h2>
+      <p>本革の名刺入れは、使うほどに手の油分で艶が増し、ポケットへの出し入れで角が馴染んでいきます。合皮や金属製にはない変化ですが、その分、雨や汗などの水分には注意が必要です（手入れの基本は<a class="inline" href="leather-care-basics.html">手入れ入門の記事</a>にまとめています）。名刺入れは顔を合わせる相手の目に触れる道具です。派手さではなく、清潔感と手入れの行き届いた質感が、結果として印象を左右します。</p>
+
+      <div class="note-box">
+        <p><strong>迷ったら、まず「分けたいか、薄くしたいか」</strong></p>
+        <p>名刺入れ選びの分かれ目は、容量の数字よりも使い方です。頂いた名刺をその場で分けたいなら仕切り型、ポケットで身軽に持ちたいなら薄型。この一点を決めるだけで、候補はほぼ絞れます。</p>
+      </div>
+
+      <a class="back-link" href="index.html">← ブログ一覧へ戻る</a>
+    </article>
+  </div>
+
+  <!-- Related products -->
+  <div class="related">
+    <div class="wrap">
+      <div class="related-head">
+        <p class="eyebrow">PRODUCTS</p>
+        <h2>記事に出てきたアイテム</h2>
+      </div>
+      <div class="grid">
+
+        <article class="card">
+          <a class="thumb" href="../products/product-24.html"><img src="../images/cards/twin-pocket-card-case-card.webp" loading="lazy" decoding="async" alt="ツインポケット名刺入れ"></a>
+          <p class="cat">CARD CASE</p>
+          <h3><a href="../products/product-24.html">ツインポケット名刺入れ</a></h3>
+          <p class="desc">2つの収納部に各15枚、計30枚収まる薄型名刺入れ。自分の名刺と頂いた名刺を分けて収められます。</p>
+          <p class="price">¥7,040 <small>（税込）</small></p>
+          <!-- Square決済リンクをここに設定 -->
+          <a class="btn" href="#">購入する</a>
+        </article>
+
+        <article class="card">
+          <a class="thumb" href="../products/product-25.html"><img src="../images/cards/one-piece-card-case-card.webp" loading="lazy" decoding="async" alt="ワンピース薄型名刺入れ"></a>
+          <p class="cat">CARD CASE</p>
+          <h3><a href="../products/product-25.html">ワンピース薄型名刺入れ</a></h3>
+          <p class="desc">一枚の革で構成した薄型名刺入れ。30枚収納で厚さ約15mm、マットな質感の黒革です。</p>
+          <p class="price">¥5,500 <small>（税込）</small></p>
+          <!-- Square決済リンクをここに設定 -->
+          <a class="btn" href="#">購入する</a>
+        </article>
+
+        <article class="card">
+          <a class="thumb" href="../products/product-23.html"><img src="../images/cards/zip-key-wallet-card.webp" loading="lazy" decoding="async" alt="ジップキーウォレット"></a>
+          <p class="cat">KEY WALLET</p>
+          <h3><a href="../products/product-23.html">ジップキーウォレット</a></h3>
+          <p class="desc">鍵2本・硬貨・カード・紙幣をひとつに収めるファスナー式ウォレット。これだけで出かけられる最小構成です。</p>
+          <p class="price">¥12,430 <small>（税込）</small></p>
+          <!-- Square決済リンクをここに設定 -->
+          <a class="btn" href="#">購入する</a>
+        </article>
+
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-inner">
+      <p class="footer-logo">Macrow</p>
+      <div class="footer-links">
+        <a href="../index.html#about">ブランドについて</a>
+        <a href="../index.html#goods">革小物</a>
+        <a href="../index.html#bags">バッグ</a>
+        <a href="../index.html#gift">ギフト</a>
+        <a href="index.html">ブログ</a>
+        <a href="../law.html">特定商取引法に基づく表記</a>
+      </div>
+    </div>
+    <p class="copy">&copy; 2026 Macrow. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
