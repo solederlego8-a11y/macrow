@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>小さな財布の選び方 ― キャッシュレス時代のミニウォレット入門｜Macrow ブログ</title>
+<meta name="description" content="キャッシュレス時代の小さな財布（ミニウォレット）の選び方を解説。毎日持ち歩くものを数えることから、ファスナー式・ポーチ型・カードケース分離型の違い、革の小さな財布で確認したいファスナー・厚み・手入れのポイントまで整理しました。">
+<style>
+  :root{
+    --ink:#111111;
+    --sub:#6e6e6e;
+    --line:#e5e5e5;
+    --bg:#ffffff;
+    --soft:#f5f5f5;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-padding-top:84px;}
+  :focus-visible{outline:2px solid var(--ink);outline-offset:3px;}
+  body{
+    font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic",YuGothic,"Noto Sans JP",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    color:var(--ink);
+    background:var(--bg);
+    line-height:1.8;
+    letter-spacing:.04em;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none;}
+  img{display:block;max-width:100%;}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 24px;}
+
+  /* Header */
+  header{
+    position:sticky;top:0;z-index:10;
+    background:rgba(255,255,255,.94);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .header-inner{display:flex;align-items:center;justify-content:space-between;height:64px;}
+  .logo{font-size:16px;font-weight:600;letter-spacing:.26em;}
+  nav{display:flex;gap:28px;font-size:12.5px;letter-spacing:.1em;color:var(--sub);}
+  nav a:hover{color:var(--ink);}
+  @media(max-width:680px){
+    html{scroll-padding-top:118px;}
+    .header-inner{height:auto;min-height:64px;flex-wrap:wrap;padding-top:10px;padding-bottom:10px;row-gap:8px;}
+    .logo{font-size:14px;}
+    nav{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:11.5px;width:100%;}
+  }
+
+  /* Breadcrumb */
+  .crumb{padding:28px 0 0;font-size:12px;color:var(--sub);letter-spacing:.08em;}
+  .crumb a:hover{color:var(--ink);}
+  .crumb span{margin:0 8px;color:var(--line);}
+
+  /* Article */
+  .article{max-width:760px;margin:0 auto;padding:36px 0 88px;}
+  .article .cat{font-size:11px;letter-spacing:.34em;color:var(--sub);}
+  .article h1{font-size:clamp(23px,3.2vw,32px);font-weight:600;letter-spacing:.06em;line-height:1.6;margin-top:12px;overflow-wrap:anywhere;}
+  .article .lead{font-size:15px;margin-top:24px;}
+  .article h2{font-size:19px;font-weight:600;letter-spacing:.08em;margin-top:48px;padding-bottom:10px;border-bottom:1px solid var(--line);}
+  .article h3{font-size:15.5px;font-weight:600;letter-spacing:.08em;margin-top:32px;}
+  .article p{font-size:14.5px;margin-top:16px;}
+  .article ul,.article ol{font-size:14.5px;margin-top:14px;padding-left:1.4em;}
+  .article li{margin-top:6px;}
+  .article a.inline{color:var(--ink);text-decoration:underline;text-underline-offset:3px;}
+  .article table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:18px;}
+  .article th,.article td{border-bottom:1px solid var(--line);padding:12px 8px;text-align:left;vertical-align:top;}
+  .article th{width:30%;font-weight:600;letter-spacing:.06em;}
+  .article td{color:#333;}
+  .note-box{background:var(--soft);padding:20px 22px;margin-top:24px;font-size:13.5px;}
+  .note-box p{font-size:13.5px;margin-top:8px;}
+  .note-box p:first-child{margin-top:0;}
+  .back-link{display:inline-block;margin-top:48px;font-size:13px;color:var(--sub);letter-spacing:.08em;}
+  .back-link:hover{color:var(--ink);}
+
+  /* Related products */
+  .related{border-top:1px solid var(--line);padding:64px 0 88px;}
+  .related-head{text-align:center;margin-bottom:40px;}
+  .related-head .eyebrow{font-size:11px;letter-spacing:.4em;color:var(--sub);margin-bottom:12px;}
+  .related-head h2{font-size:clamp(20px,2.8vw,26px);font-weight:500;letter-spacing:.14em;}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:48px 28px;}
+  @media(max-width:900px){ .grid{grid-template-columns:repeat(2,1fr);} }
+  @media(max-width:540px){ .grid{grid-template-columns:1fr;} }
+  .card{display:flex;flex-direction:column;}
+  .card .thumb{background:var(--soft);overflow:hidden;aspect-ratio:1/1;}
+  .card .thumb img{width:100%;height:100%;object-fit:contain;transition:transform .5s ease;}
+  .card:hover .thumb img{transform:scale(1.03);}
+  .card .cat{font-size:10.5px;letter-spacing:.28em;color:var(--sub);margin-top:18px;}
+  .card h3{font-size:15.5px;font-weight:600;letter-spacing:.06em;margin-top:4px;overflow-wrap:anywhere;}
+  .card .desc{font-size:13px;color:var(--sub);margin-top:6px;flex:1;}
+  .card .price{font-size:15px;margin-top:12px;letter-spacing:.06em;}
+  .card .price small{font-size:11px;color:var(--sub);}
+  .btn{
+    display:block;text-align:center;margin-top:14px;
+    padding:12px 0;border:1px solid var(--ink);
+    font-size:12.5px;letter-spacing:.22em;transition:background .25s,color .25s;
+  }
+  .btn:hover{background:var(--ink);color:#fff;}
+  .card a.thumb{display:block;}
+  .card h3 a:hover{text-decoration:underline;text-underline-offset:4px;}
+
+  /* Footer */
+  footer{border-top:1px solid var(--line);padding:48px 0 40px;}
+  .footer-inner{display:flex;justify-content:space-between;align-items:flex-start;gap:24px;flex-wrap:wrap;}
+  .footer-logo{font-size:14px;font-weight:600;letter-spacing:.26em;}
+  .footer-links{display:flex;gap:24px;font-size:12.5px;color:var(--sub);flex-wrap:wrap;}
+  .footer-links a:hover{color:var(--ink);}
+  .copy{margin-top:28px;font-size:11.5px;color:var(--sub);letter-spacing:.08em;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap header-inner">
+    <a class="logo" href="../index.html">Macrow</a>
+    <nav>
+      <a href="../index.html#about">ブランドについて</a>
+      <a href="../index.html#goods">革小物</a>
+      <a href="../index.html#bags">バッグ</a>
+      <a href="../index.html#gift">ギフト</a>
+      <a href="index.html">ブログ</a>
+      <a href="../law.html">特定商取引法に基づく表記</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <p class="crumb"><a href="../index.html">トップ</a><span>/</span><a href="index.html">ブログ</a><span>/</span>小さな財布の選び方</p>
+
+    <article class="article">
+      <p class="cat">HOW TO CHOOSE</p>
+      <h1>小さな財布の選び方 ― キャッシュレス時代のミニウォレット入門</h1>
+      <p class="lead">支払いの中心がカードやスマートフォンに移り、財布に毎日入れておくものは少なくなりました。それでも「財布を小さくしたら、現金が必要な場面で困るのでは」と迷う方は少なくありません。この記事では、持ち歩くものを数えるところから始め、ファスナー式・ポーチ型・カードケース分離という形の違いと、革の小さな財布で確認したい点を整理します。</p>
+
+      <h2>まず「毎日持ち歩くもの」を数える</h2>
+      <p>小さな財布選びの出発点は、サイズではなく中身です。いまの財布を開けて、毎日使うものと、入れたまま忘れているものを分けてみてください。多くの場合、残るのは次の範囲に収まります。</p>
+      <ul>
+        <li>決済用のカード（クレジットカード・キャッシュカードなど数枚）</li>
+        <li>身分証（運転免許証やマイナンバーカードなど1〜2枚）</li>
+        <li>紙幣 数枚と、硬貨 少し（現金のみの店や駐車場用）</li>
+        <li>家の鍵（鍵も一緒にまとめたい場合）</li>
+      </ul>
+      <p>この範囲に収まるなら、長財布である必要はほとんどありません。逆に、領収書や診察券・ポイントカードを常時持ち歩く仕事の方は、その置き場を別に確保できるかどうかが先に決める点になります。</p>
+
+      <h2>形で考える ― ファスナー式／ポーチ型／分離型</h2>
+      <p>小さな財布は、形ごとに「安心感」と「薄さ」のバランスが違います。</p>
+      <table>
+        <tr><th>ファスナー式ウォレット</th><td>口が閉まるため硬貨や鍵が飛び出しにくく、ポケットやバッグの中でも中身が散らかりません。Macrow の<a class="inline" href="../products/product-23.html">ジップキーウォレット</a>は、鍵2本・硬貨・カード・紙幣をひとつに収める最小構成のタイプです</td></tr>
+        <tr><th>ポーチ型ウォレット</th><td>マチやゆとりがあり、カードと現金に加えて小さなものをひとまとめにできます。<a class="inline" href="../products/product-26.html">テザーポーチウォレット</a>のようにコードテザー付きのタイプは、バッグへの付け替えや取り出しのしやすさが特長です</td></tr>
+        <tr><th>カードケース分離型</th><td>カードはカードケース、現金は最小限、と分ける方法です。いちばん薄く軽くなりますが、持ち物の点数は増えます。名刺入れをカード収納に兼用する方もいます</td></tr>
+      </table>
+      <p>迷ったら、「ポケットに入れるか、バッグに入れるか」で考えると絞り込みやすくなります。ポケット派は薄さとファスナーの安心感、バッグ派は取り出しやすさとひとまとめ感を優先すると失敗が少なくなります。</p>
+
+      <h2>革の小さな財布で確認したいこと</h2>
+      <h3>ファスナーの引き心地</h3>
+      <p>ファスナー式は開け閉めの回数が多い道具です。引手の大きさ、角まわりの動きの滑らかさは、店頭や届いた直後に確かめたい点です。革がなじむにつれて手入れの感触も変わるため、使い始めの固さは過度に気にしなくて構いません。</p>
+      <h3>厚みは「入れた状態」で見る</h3>
+      <p>空の状態の薄さと、カードと紙幣を入れた状態の厚みは別物です。自分の持ち物がすべて入った状態を想像し、普段のポケットやバッグのポケットに収まるかを確認してください。詰め込みすぎは革とファスナーの両方に負担をかけます。</p>
+      <h3>色と手入れの手間</h3>
+      <p>黒い革は、色の組み合わせを考えずに持てる一方、ほこりや擦れ跡が目立ちやすい面があります。手入れの基本は<a class="inline" href="leather-care-basics.html">黒い革製品の手入れ入門</a>にまとめていますが、小さな財布は面積が小さいぶん、乾拭きだけでも状態を保ちやすい道具です。</p>
+
+      <div class="note-box">
+        <p><strong>小さくすると決めたら、「やめるもの」も決める</strong></p>
+        <p>小さな財布への移行でつまずきやすいのは、レシートとポイントカードの扱いです。レシートはその日のうちに別の場所へ移す、ポイントカードはアプリに移行するか厳選する。この2つを先に決めておくと、「入らないから元に戻す」を避けられます。</p>
+      </div>
+
+      <h2>小さな財布は「引き算」の道具</h2>
+      <p>小さな財布は、収納力を競う道具ではなく、持ち歩くものを選び直す道具です。中身が決まれば形は自然に決まります。Macrow の革小物はすべて黒の本革（牛革）で仕立てています。まずはいまの財布の中身を数えるところから始めてみてください。</p>
+
+      <a class="back-link" href="index.html">← ブログ一覧へ戻る</a>
+    </article>
+  </div>
+
+  <!-- Related products -->
+  <div class="related">
+    <div class="wrap">
+      <div class="related-head">
+        <p class="eyebrow">PRODUCTS</p>
+        <h2>記事に出てきたアイテム</h2>
+      </div>
+      <div class="grid">
+
+        <article class="card">
+          <a class="thumb" href="../products/product-23.html"><img src="../images/cards/zip-key-wallet-card.webp" loading="lazy" decoding="async" alt="ジップキーウォレット"></a>
+          <p class="cat">KEY WALLET</p>
+          <h3><a href="../products/product-23.html">ジップキーウォレット</a></h3>
+          <p class="desc">鍵2本・硬貨・カード・紙幣をひとつに収めるファスナー式ウォレット。これだけで出かけられる最小構成です。</p>
+          <p class="price">¥12,430 <small>（税込）</small></p>
+          <!-- Square決済リンクをここに設定 -->
+          <a class="btn" href="#">購入する</a>
+        </article>
+
+        <article class="card">
+          <a class="thumb" href="../products/product-26.html"><img src="../images/cards/tether-pouch-wallet-card.webp" loading="lazy" decoding="async" alt="テザーポーチウォレット"></a>
+          <p class="cat">POUCH WALLET</p>
+          <h3><a href="../products/product-26.html">テザーポーチウォレット</a></h3>
+          <p class="desc">コードテザー付きのポーチ型ウォレットを黒革で。ファスナー式メイン収納と背面ポケット付き。</p>
+          <p class="price">¥12,100 <small>（税込）</small></p>
+          <!-- Square決済リンクをここに設定 -->
+          <a class="btn" href="#">購入する</a>
+        </article>
+
+        <article class="card">
+          <a class="thumb" href="../products/product-24.html"><img src="../images/cards/twin-pocket-card-case-card.webp" loading="lazy" decoding="async" alt="ツインポケット名刺入れ"></a>
+          <p class="cat">CARD CASE</p>
+          <h3><a href="../products/product-24.html">ツインポケット名刺入れ</a></h3>
+          <p class="desc">2つの収納部に各15枚、計30枚収まる薄型名刺入れ。自分の名刺と頂いた名刺を分けて収められます。</p>
+          <p class="price">¥7,040 <small>（税込）</small></p>
+          <!-- Square決済リンクをここに設定 -->
+          <a class="btn" href="#">購入する</a>
+        </article>
+
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-inner">
+      <p class="footer-logo">Macrow</p>
+      <div class="footer-links">
+        <a href="../index.html#about">ブランドについて</a>
+        <a href="../index.html#goods">革小物</a>
+        <a href="../index.html#bags">バッグ</a>
+        <a href="../index.html#gift">ギフト</a>
+        <a href="index.html">ブログ</a>
+        <a href="../law.html">特定商取引法に基づく表記</a>
+      </div>
+    </div>
+    <p class="copy">&copy; 2026 Macrow. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
